@@ -1,0 +1,365 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    border: 2px solid black;
+    height: auto;
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-direction: column; */
+}
+
+.item{
+    
+    height:500px;
+    
+    padding: 3px;
+}
+
+#item-1{
+    width: 300px;
+}
+
+#item-2{
+    width: 640px;
+    height: auto;
+    background-color: rgb(235 238 240);
+}
+
+#item-3{
+    width: 380px;
+}
+
+.header{
+    width: auto;
+    padding-left: 40px;
+    position: fixed;
+}
+
+.logo a{
+    color: rgba(29,161,242,1.00);
+    font-size: 50px;
+}
+
+.menu{
+    display: inline-grid;
+}
+
+.menu .active{
+    /* background-color: #1da1f21c; */
+    border-radius: 25px;
+    padding: 10px;
+    color: #1da1f2;
+}
+
+.menu a{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 700;
+}
+.menu a:hover{
+    background-color: #1da1f21c;
+    border-radius: 25px;
+    padding: 10px;
+    color: #1da1f2;
+}
+
+
+.menu span{
+    margin:15px;
+    line-height: 1;
+}
+
+.btn-tweet{
+    margin: 10px;
+    width: 80%;
+    font-size: 21px;
+    padding: 11px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #1da1f2;
+    border: none;
+    outline: none;
+}
+.profile{
+    margin-top: 40px;
+}
+.profile a{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.profile a{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    display:inline-block;
+    padding: 10px;  
+    font-weight: bold;
+}
+.profile a:hover{
+    background-color: #1da1f21c;
+    border-radius: 40px;
+    padding: 10px;
+    color: #000000;
+}    
+.profile img{
+    border-radius: 25px;
+    width: 50px;
+    float: left;
+}
+
+.profile span{
+    padding: 10px;
+    font-size: 16px;
+}
+.profile .user-id{
+    display: flex;
+    padding: 0px 0px 0px 10px;
+    font-size: 14px;
+    color: #657786;
+    font-weight: normal;
+}
+.top-stick-menu{
+    position: sticky;
+    width: inherit;
+    background-color:#ffffff!important;
+    /* display:contents; */
+}
+.top-stick-menu a{
+    font-size: 22px;
+    font-weight: 700;
+    padding: 5px;
+    display: block;
+    /* margin-top: 12px; */
+    text-decoration: none;
+    color:#000000;
+    border-bottom: 1px solid #ccc;
+    
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+}
+.write-here{
+	width: 100%;
+	/*min-height: 71px;*/
+	border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: #fff;
+    min-height: 150px;
+
+}
+.img img{
+    border-radius: 35px;
+    float:left;
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    margin: 8px 1px 0 8px;
+    display: inline-block;
+    border: 1px solid transparent;
+}
+.textarea{
+    display: flex;
+}
+
+.textarea textarea{
+    margin-top: 8px;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border: none;
+    resize:none;
+    font-size: 16px;
+}
+.textarea textarea:focus{
+    border:none ;
+    outline: none;
+}
+
+.globe{
+    margin: 0px 0px 1px 0px;
+    color: #1da1f2;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.write-here-box{
+    margin: 0px 0px 0px 62px;
+}
+
+.icons a{
+    font-size: 22px;
+    color: #1da1f2;
+    padding: 5px;
+}
+
+.icons a:hover{
+    font-size: 22px;
+    color: #1da1f2;
+    padding: 5px;
+    background-color: #1da1f21c;
+    border-radius: 25px;
+    
+}
+
+.btn-tweet-button{
+    font-size: 15px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #1da1f2;
+    border: none;
+    outline: none;
+    float: right;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.post-profile {
+    border-radius:100px;
+    width:48px;
+    margin-right: 15px;
+  }
+  
+  
+  .tweet-post {
+    max-width:560px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius:3px;
+    padding: 30px;
+    border-bottom: 1px solid #e6ecf0;
+    border-top: 1px solid #e6ecf0;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items:flex-start;
+    font-size:14px;
+  }
+  .post-header-info {
+    font-weight:bold;
+  }
+  .post-header-info span {
+    color:#657786;
+    font-weight:normal;
+    margin-left: 5px;
+  }
+  .post-header-info p {
+    font-weight:normal;
+    margin-top: 5px;
+    
+  }
+  .post-img {
+    padding-left: 60px;
+  }
+  
+  .post-info-counts {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+  .post-info-counts div {
+    display: flex;
+    margin-right: 20px;
+  }
+  .post-info-counts div svg {
+    color:#657786;
+    margin-right: 10px;
+  }
+
+  .post-img img{
+      width:100%;
+  }
+
+  .has-search .form-control {
+    padding-left: 2.375rem;
+    width: 80%;
+    background-color: rgb(235, 238, 240);
+    
+}
+.has-search{
+    margin: auto;
+    width: 100%;
+    /* border: 3px solid green; */
+    padding: 20px;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.search-box{
+    height: 40px;
+    width: 80%;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.box{
+    margin: auto;
+    width: 300px;
+    /* border: 2px solid green; */
+    padding: 0px 0px 0px 12px;
+    background-color: rgb(235, 238, 240);
+    border-radius: 15px;
+}
+
+.box-title h3{
+    margin: 10px;
+    display: inline-block;
+    
+}
+
+.user-follow-list{
+    padding: 10px;
+}
+
+.box hr{
+    width: 95%;
+}
+
+.btn-follow{
+    font-size: 13px;
+    border-radius: 25px;
+    color: #1da1f2;
+    background-color: #ebeef0;
+    border: 1px solid #1da1f2;
+    float: right;
+    padding: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.show-more-title{
+    margin: 0;
+    color: #1da1f2;
+    cursor: pointer;
+}
